@@ -1,0 +1,32 @@
+.about-us {
+
+	//padding-top: 204px; padding-bottom: 50px;
+	padding-top: 36px; padding-bottom: 31px;
+	margin-top: 22px; margin-bottom: 19px;
+	background: #e4f1ff;
+	@include _550 {
+		//margin-top: 78px;
+	}
+	@include _992 {
+		background: transparent;
+		margin-top: 155px;
+	}
+
+	// .about-us__text
+
+	&__text {
+		font-size: 0.8125rem;
+		line-height: 138.461538%;
+		text-align: center;
+
+		@include _550 {
+			font-size: 1.25rem;
+		}
+		
+		@include _992 {
+			font-size: 1.625rem;
+			margin-right: -25px;
+			text-align: left;
+		}
+	}
+}

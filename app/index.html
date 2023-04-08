@@ -1,0 +1,219 @@
+@@include("html/_header.html")
+
+	<main class="main">
+		<section class="hero container">
+			<div class="hero__image" data-aos="fade-in" data-aos-delay="100">
+				<div class="hero__image--bg">
+					<mark class="hero__image--decor logo-company">
+						Family
+					</mark>
+				</div>
+				<div class="hero__image--body">
+					<picture>
+						<source srcset="img/index/hero/image.webp" type="image/webp">
+						<img src="img/index/hero/image.png" alt="" width="900" height="905" loading="lazy">
+					</picture>
+				</div>
+			</div>
+			<div class="hero__info" data-aos="fade-in" data-aos-delay="200">
+				<h1 class="hero__title main-title">
+					Соціальний проект доступна глюкометрія 
+				</h1>
+				<div class="hero__text">
+					НАЦІОНАЛЬНА ПРОГРАМИ  ЗАПОБІГАННЯ ТА БОРОТЬБИ З ДІАБЕТОМ забезпечує спеціальні ціни на засоби вимірювання рівню цукру в крові для всіх українців.
+				</div>
+				<div class="hero__footer">
+					<a href="#application" class="hero__btn btn btn-to-scroll _large">
+						Залишити заявку
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="about-us container" data-aos="fade-in" data-aos-delay="200">
+			<h2 class="visually-hidden">
+				Про нас
+			</h2>
+			<div class="about-us__text">
+				<p>
+					Глюкометр Longevita FAMILY – це сучасний прилад для вимірювання рівня глюкози в крові, розроблений австрійським холдингом VAMA Holding GmbH, який рекомендований Міністерством охорони здоров’я України та провідними країнами Європи та США
+				</p>
+			</div>
+		</section>
+		<section class="products-row container">
+			<h2 class="visually-hidden">
+				Наші Товари
+			</h2>
+			<div class="products-row__col" data-aos="fade-in" data-aos-delay="200">
+				<div class="products-row__item product">
+					<h3 class="product__title">
+						Глюкометр Longevita FAMILY
+					</h3>
+					<div class="product__block">
+						<div class="product__image">
+							<div class="product__image--body">
+								<picture>
+									<source srcset="img/index/products-list/product-1.webp" type="image/webp">
+									<img src="img/index/products-list/product-1.png" alt="" width="300" height="412" loading="lazy">
+								</picture>
+							</div>
+						</div>
+						<div class="product__info">
+							<div class="product__info--text">
+								<h4>У наборі:</h4>
+								<ul>
+									<li>глюкометр</li>
+									<li>тест смужки 50 шт.</li>
+									<li>ланцентний пристрій для проколу</li>
+									<li>ланцети 10 шт.</li>
+									<li>3 контрольні розчини</li>
+									<li>пластиковий футляр для зберігання</li>
+								</ul>
+							</div>
+							<div class="product__info--price product__price">
+								<strong class="product__price--current">
+									<b>250</b><span>грн</span>
+								</strong>
+								<del class="product__price--old">
+									<b>600</b><span>грн</span>
+								</del>
+							</div>
+						</div>
+						<div class="product__footer">
+							<a href="#create-order-popup" class="product__btn btn open-popup">
+								Замовити
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="products-row__col" data-aos="fade-in" data-aos-delay="300">
+				<div class="products-row__item product">
+					<h3 class="product__title">
+						Тест-смужки Longevita FAMILY
+					</h3>
+					<div class="product__block">
+						<div class="product__image">
+							<div class="product__image--body">
+								<picture>
+									<source srcset="img/index/products-list/product-2.webp" type="image/webp">
+									<img src="img/index/products-list/product-2.png" alt="" width="300" height="412" loading="lazy">
+								</picture>
+							</div>
+						</div>
+						<div class="product__info">
+							<div class="product__info--text">
+								<h4>У наборі:</h4>
+								<ul>
+									<li>тест смужки 50 шт.</li>
+								</ul>
+							</div>
+							<div class="product__info--price product__price">
+								<strong class="product__price--current">
+									<b>199</b><span>грн</span>
+								</strong>
+								<del class="product__price--old">
+									<b>300</b><span>грн</span>
+								</del>
+							</div>
+						</div>
+						<div class="product__footer">
+							<a href="#create-order-popup" class="product__btn btn open-popup">
+								Замовити
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="note container _min" data-aos="fade-in" data-aos-delay="200">
+			<h2 class="visually-hidden">
+				Важливе повідомлення
+			</h2>
+			<div class="note__text">
+				*Соціальний проект буде тривати три місяці, щоб кожна родина мала можливість придбати комплекти для вимірювання рівня цукру в крові за значно доступнішими цінами, ніж зазвичай
+			</div>
+		</section>
+		<section class="why">
+			<h2 class="why__title container" data-aos="fade-in" data-aos-delay="200">
+				Чому Longevita <mark class="logo-company">Family</mark> ?
+			</h2>
+			<ul class="why__list container _none-padding">
+				@@loop("html/_why-item.html", [
+					{
+						"image": '1',
+						"title": 'ТОЧНІСТЬ',
+						"text": 'Глюкометр увібрав у себе всі найсучасніші технології лабораторної медицини Австріі для того, щоб користування ним було максимально простим і безпечним, результати – завжди точними та надійними, а сам прилад був компактним і завжди під рукою',
+					},
+					{
+						"image": '2',
+						"title": 'ПРОСТОТА',
+						"text": 'Будь-хто може скористатися приладом Longevita FAMILY та отримати точні показники рівня глюкози в крові. Longevita FAMILY потребує мінімальну кількість крові для виміру: капля крові у два рази менша, ніж у звичайних глюкометрах',
+					},
+					{
+						"image": '3',
+						"title": 'БЕЗБОЛІСНІСТЬ',
+						"text": 'Тригранне лазерне заточення ланцета та регуляція глибини проколу на ланцетному пристрої забезпечують практично безболісний прокол для отримання крапельки крові. Завдяки цьому забезпечується мінімум болісних відчуттів та максимально швидке загоювання мікроскопічної ранки від проколу, що особливо важливо у застосуванні для немовлят',
+					},
+					{
+						"image": '4',
+						"title": 'УНІКАЛЬНІСТЬ',
+						"text": 'Унікальною опцією глюкометра Longevita FAMILY є можливість вимірювання за різними зразками крові: капілярної, венозної та навіть пуповинної',
+					},
+					{
+						"image": '5',
+						"title": 'ДОСТУПНІСТЬ',
+						"text": 'Наявність глюкометрів Longevita FAMILY та витратних матеріалів до них є в розгалуженій мережі аптек та магазинів у всіх регіонах країни. Після завершення проекту  виробник Longevita (VAMA Holding GmbH) гарантує наявність глюкометрів та тест-смужок Longevita FAMILY на ринку України',
+					},
+				])
+			</ul>
+		</section>
+		<section class="details container _none-padding">
+			<div class="details__row">
+				<div class="details__col" data-aos="fade-in" data-aos-delay="200">
+					<div class="details__partners">
+						<h2 class="details__partners--title">
+							Партнери, у яких можна придбати товар по соціальній ціні
+						</h2>
+						<div class="details__partners--footer">
+							<a href="https://longevita.ua/ua/family-social-project/?utm_source=site1" class="details__partners--btn">
+								Деталі
+								<svg width="14" height="23" viewBox="0 0 14 23">
+									<use xlink:href="img/sprites.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="details__col" data-aos="fade-in" data-aos-delay="300">
+					<div class="details__about">
+						<mark class="details__about--logo logo-company">
+							Family
+						</mark>
+						<h2 class="details__about--title">
+							Використовуйте глюкометр Longevita FAMILY
+						</h2>
+						<div class="details__about--text">
+							<p>
+								щоб швидко та точно виміряти рівень глюкози в крові та підтримувати здоровий спосіб життя
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="application container" data-aos="fade-in" data-aos-delay="200" id="application">
+			<form class="application__form">
+				<label class="application__label">
+					<input type="text" name="name" placeholder="Ім'я" required class="application__input">
+				</label>
+				<label class="application__label">
+					<input type="tel" name="phone" placeholder="Телефон" required class="application__input">
+				</label>
+				<button class="application__btn btn" type="submit">
+					Залишити заявку
+				</button>
+			</form>
+		</section>
+	</main>
+
+@@include("html/_footer.html")

@@ -1,0 +1,36 @@
+.note {
+
+	margin-top: 60px; margin-bottom: 36px;
+	
+	@include _768 {
+		margin-top: 100px; margin-bottom: 70px;
+	}
+	
+	@include _992 {
+		margin-top: 154px; margin-bottom: 100px;
+	}
+	background: var(--primary-color);
+
+	// .note__text
+
+	&__text {
+		padding-top: 26px; padding-bottom: 26px;
+
+		line-height: 180%;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--white);
+		text-align: center;
+
+		@include _550 {
+			padding-top: 36px; padding-bottom: 36px;
+			font-size: 1rem;
+		}
+		
+		@include _992 {
+			padding-top: 58px; padding-bottom: 58px;
+			font-size: 1.25rem;
+			text-align: left;
+		}
+	}
+}

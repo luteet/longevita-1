@@ -1,0 +1,10 @@
+input, textarea {
+	&::placeholder {
+		opacity: 1;
+		transition: opacity .3s ease;
+	}
+
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,30 @@
+.header {
+
+	position: absolute;
+	left: 0; top: 0;
+	width: 100%;
+
+	padding-top: 18px;
+	
+	@include _768 {
+		padding-top: 38px;
+	}
+	
+	@include _992 {
+		padding-top: 62px;
+	}
+
+	// .header__logo
+
+	&__logo {
+
+		// .header__logo--img
+
+		&--img {
+			object-fit: contain;
+			@include _992 {
+				width: 216px; height: 69px;
+			}
+		}
+	}
+}

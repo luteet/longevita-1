@@ -1,0 +1,11 @@
+<svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+	<symbol viewBox="0 0 14 23" id="arrow">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2399 11.5L13.2535 11.4864L1.76714 0L0 1.76712L9.73286 11.5L0 21.2329L1.76712 23L13.2535 11.5136L13.2399 11.5Z"/>
+	</symbol>
+
+	<symbol viewBox="0 0 21 22" id="close">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M20.7531 2.86827L18.6317 0.746948L10.5 8.87868L2.36827 0.746948L0.246948 2.86827L8.37868 11L0.246948 19.1317L2.36827 21.2531L10.5 13.1213L18.6317 21.2531L20.7531 19.1317L12.6213 11L20.7531 2.86827Z"/>
+	</symbol>
+		
+</svg>

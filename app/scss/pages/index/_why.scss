@@ -1,0 +1,167 @@
+.why {
+
+	padding-top: 36px; padding-bottom: 0;
+	
+	@include _768 {
+		padding-top: 100px; padding-bottom: 50px;
+	}
+	
+	@include _992 {
+		padding-top: 124px; padding-bottom: 75px;
+	}
+
+	// .why__title
+
+	&__title {
+		font-weight: 700;
+		font-size: 1.25rem;
+		line-height: 125%;
+		color: var(--primary-color);
+		text-align: center;
+
+		@include _550 {
+			font-size: 2rem;
+		}
+		
+		@include _768 {
+			font-size: 3rem;
+		}
+		
+		@include _992 {
+			font-size: 4rem;
+		}
+
+		& .logo-company {
+			line-height: 100%;
+			padding: 6px 15px;
+			@include _550 {
+				padding: 10px 20px;
+			}
+			
+			@include _768 {
+				padding: 12px 30px;
+			}
+			
+			@include _992 {
+				padding: 15px 40px;
+			}
+		}
+	}
+
+	// .why__list
+
+	&__list {
+		padding-top: 30px;
+		@include _768 {
+			padding-top: 69px;
+		}
+		@include _992 {
+			padding-top: 119px;
+		}
+	}
+
+	// .why__item
+
+	&__item {
+		width: 100%;
+		@include _768 {
+			display: flex;
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+			}
+		}
+
+		// .why__item--image
+
+		&--image {
+			min-height: 212px;
+			display: flex;
+			@include _768 {
+				flex: 0 1 50%; width: 50%;
+			}
+		}
+
+		&--image-body {
+			width: 100%; padding-top: 58.90411%;
+			min-height: 100%;
+			position: relative;
+
+			& img {
+				position: absolute;
+				left: 0; top: 0;
+				width: 100%; height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		// .why__item--info
+
+		&--info {
+			padding: 30px var(--container-padding) 63px var(--container-padding);
+
+			@include _768 {
+				flex: 0 1 50%; width: 50%;
+				padding: 54px 35px 30px 40px;
+			}
+			
+			@media (min-width: 1280px) {
+				padding: 74px 44px 30px 80px;
+			}
+			background: var(--light);
+		}
+
+		// .why__item--title
+
+		&--info h3 {
+			font-size: 1.125rem;
+			line-height: 111.111111%;
+			font-weight: 700;
+			color: var(--primary-color);
+			padding-bottom: 10px;
+			text-align: center;
+
+			@include _550 {
+				font-size: 1.5rem;
+			}
+			
+			@include _768 {
+				font-size: 1.75rem;
+				padding-bottom: 30px;
+				text-align: left;
+			}
+			
+			@include _992 {
+				font-size: 2.125rem;
+			}
+
+			@media (min-width: 1280px) {
+				padding-bottom: 53px;
+			}
+		}
+
+		// .why__item--text
+
+		&--info p {
+			padding-top: 15px;
+			font-size: 0.8125rem; line-height: 169.230769%;
+			font-weight: 600;
+			text-align: justify;
+
+			@include _550 {
+				font-size: 1rem;
+			}
+			
+			@include _768 {
+				font-size: 1.125rem;
+			}
+			
+			@include _992 {
+				font-size: 1.25rem;
+			}
+
+			@media (min-width: 1280px) {
+				padding-top: 20px;
+			}
+		}
+	}
+}
